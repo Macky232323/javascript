@@ -1,10 +1,74 @@
 body {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20%;
-    padding-right: 20%;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
 }
 
-body * {
-    margin: 5px;
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 8px;
+}
+
+.input-section button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#einkaufsliste {
+    list-style-type: none;
+    padding: 0;
+}
+
+#einkaufsliste li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#einkaufsliste li:last-child {
+    border-bottom: none;
+}
+
+#einkaufsliste li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.total-section {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total-section button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.error {
+    border: 1px solid red;
 }
